@@ -11,5 +11,5 @@ frontend/dist/
 *.log
 
 .DS_Store
-models/risk_model.pkl
+
 data/transactions.csv
