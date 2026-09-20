@@ -28,6 +28,13 @@ app.add_middleware(
 # Health Check
 # ---------------------------------------------------------
 
+@app.get("/")
+def root():
+    return {
+        "service": "PayShield API",
+        "status": "running",
+        "message": "Think before you pay."
+    }
 @app.get("/health")
 def health_check():
     return {
